@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    height: 748px;
+    width: 748px;
+    display: grid;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    gap: 9px;
+    background-color: #000000;
+  }
+  .items{
+    background-color: rgb(255, 255, 255);
+  }
+  .red{
+    background-color: rgb(255, 0, 0);
+    
+  }
+  .white{
+    background-color: rgb(255, 255, 255);
+    grid-column: span 3;
+  }
+  .white1{
+    background-color: rgb(255, 255, 255);
+    grid-row: span 2;
+  }
+  .white2{
+    background-color: rgb(255, 255, 255);
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .blue{
+    background-color: rgb(24, 22, 138);
+    border-bottom: 10px solid rgb(0, 0, 0);
+    
+  }
+  .white3{
+    background-color: white;
+    grid-row: span 2;
+  }
+  .white4{
+    background-color: white;
+  }
+  .yellow{
+    background-color: rgb(255, 214, 79);
+  }
+  .black{
+    background-color: rgb(0, 0, 0);
+  }
+
+</style>
+<body>
+  <div class="container">
+    <div class="items red"></div>
+    <div class="items white"></div>
+    <div class="items white1"></div>
+    <div class="items white2"></div>
+    <div class="items blue"></div>
+    <div class="items white3"></div>
+    <div class="items white4"></div>
+    <div class="items yellow"></div>
+    <div class="items black"></div>
+    
+  </div>
+</body>
+</html>
